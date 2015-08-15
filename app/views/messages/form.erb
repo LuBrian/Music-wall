@@ -1,0 +1,18 @@
+<div class="form-group">
+    <label for="exampleInputName2">Song:</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="song name" name="song[Song_title]" value="<%= @song && @song.Song_title %>">
+</div>
+
+  <div class="form-group">
+    <label for="exampleInputName2">Author:</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="author" name="song[Author]" value="<%= @song && @song.Author %>">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputName2">URL:</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Url Link" name="song[URL]" value="<%= @song && @song.URL %>">
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </div>

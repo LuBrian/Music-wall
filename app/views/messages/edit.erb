@@ -1,0 +1,6 @@
+<%= erb :'messages/error' %>
+
+<form action="/messages/<%= @song.id %>" method="POST">
+	<input type="hidden" name="_method" value="PUT">
+	<%= erb :'messages/form' %>
+</form>

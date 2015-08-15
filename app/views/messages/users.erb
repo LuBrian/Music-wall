@@ -1,0 +1,8 @@
+<% @users.each do |user| %>
+  <div class="user">
+    <h3><%= user.user_name %> <small>(by: <a href="/messages/<%= user.id %>"><%= user.email %></a>)</small></h3>
+    <p>
+      <%= "URL: #{user.password}, created at: #{user.created_at}" %>
+    </p>
+  </div>
+<% end %>

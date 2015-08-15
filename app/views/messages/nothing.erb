@@ -1,0 +1,9 @@
+<p>
+<form action="/messages/<%= @song.id %>" method="POST">
+  <input type="hidden" name="_method" value="VOTE">
+  <button type="submit" class="btn btn-default btn-xs">Like</button>
+</form>
+<% if Vote.all.empty? %>
+	<%= "0" %>
+<% end %>
+</p>
